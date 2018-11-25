@@ -11,6 +11,9 @@ class Hello extends Component {
   update(e) {
     this.setState({ message: e.target.value });
   }
+  update_cat(e) {
+    this.setState({ cat: e.target.value });
+  }
   render() {
     let { message, cat } = this.state;
     return (
@@ -18,9 +21,17 @@ class Hello extends Component {
         <h1>
           {message} - {cat}
         </h1>
-        <input type="text" onChange={this.update.bind(this)} />
+        <Widgets update={this.update.bind(this)} />
+        <Widgets update={this.update_cat.bind(this)} />
       </div>
     );
   }
 }
+
+const Widgets = props => (
+  <div>
+    <input type="text" onChange={props.update} />
+  </div>
+);
+
 export default Hello;
