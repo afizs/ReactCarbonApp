@@ -1,2 +1,0 @@
-# ReactCarbonApp
-Created with CodeSandbox
