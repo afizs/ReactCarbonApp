@@ -6,8 +6,8 @@
   "homepage": "https://codesandbox.io/s/new",
   "main": "src/index.js",
   "dependencies": {
-    "carbon-components": "8.18.0",
-    "carbon-components-react": "5.34.0",
+    "carbon-components": "9.56.2",
+    "carbon-components-react": "6.53.1",
     "carbon-icons": "6.3.2",
     "react": "16.2.0",
     "react-dom": "16.2.0",
